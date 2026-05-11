@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>ByBarn&#8482; Solutions Link</title>
+    <meta name="description" content="Add a link on your web page to ByBarn&#8482; Solutions">
+    <meta name="author" content="ByBarn&#8482; Solutions">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      div   { text-align:center; width:350px; color:#FFFFFF }
+      body  { text-align:center; background-color:#6d8cab; font-family:arial; }
+      table { text-align:center; background-color:#6d8cab; margin:0px auto; color:#FFFFFF }
+      tr    { text-align:center; background-color:#6d8cab;}
+      td    { text-align:center; background-color:#6d8cab; padding-top:8px; padding-bottom:8px; }
+      img   { border:0; }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr><td><div><b>To create a link to this web site (like the one shown here), copy the HTML code snippet below. Then paste it into the appropriate location of your web page's HTML.</b></div></td></tr>
+      <tr><td><a href="https://bybarn.com" target="_blank"><img src="images/link_bybarn.gif" alt="ByBarn&#8482; Solutions" width="88" height="31"></a></td></tr>
+      <tr><td><textarea readonly id="code" name="code" rows="7" cols="42" wrap="soft"><p style="text-align:center;"><a href="https://bybarn.com/" target="_blank"><img src="https://bybarn.com/images/link_bybarn.gif" alt="ByBarn&#8482; Solutions" title="ByBarn&#8482; Solutions" width="88" height="31"></a></p></textarea></td></tr>
+      <tr>
+        <td>
+          <button onclick="copyCode()">Copy</button>
+          <button onclick="copyClose()">Copy and Close Window</button>
+          <button onclick="closeWindow()">Close Window</button>
+        </td>
+      </tr>
+      <tr><td><span id="result"></span></td></tr>
+    </table>
+
+    <script> <!--
+      function blockErr() {
+        return true;
+      }
+      window.onerror=blockErr;
+      function copyCode() {
+        var codeCopy=document.getElementById("code");
+        codeCopy.select();
+        navigator.clipboard.writeText(codeCopy.value);
+        document.execCommand("copy");
+        document.getElementById("result").innerHTML="Code snippet copied to clipboard";
+      }
+      function closeWindow() {
+        self.close();
+      }
+      function copyClose() {
+        copyCode();
+        self.close();
+      }
+    // --></script>
+  </body>
+</html>
